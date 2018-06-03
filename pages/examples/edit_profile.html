@@ -593,181 +593,334 @@
               <li class="active"><a href="#personal" data-toggle="tab">Personal</a></li>
               <li><a href="#education" data-toggle="tab">Edu. & Work</a></li>
               <li><a href="#family" data-toggle="tab">Family</a></li>
-			  <li><a href="#contact" data-toggle="tab">Contact</a></li>
-			  <li><a href="#photos" data-toggle="tab">Photos</a></li>
-			  <li><a href="#settings" data-toggle="tab">Medical History</a></li>
-			  
+			   
             </ul>
             <div class="tab-content">
               <div class="active tab-pane" id="personal">
-                <!-- Post -->
-                				<h4 class="text-primary">Personal Info</h4>
-  				  						  <table width="80%" class="table table-condensed">
-  						  	<tr>
-  						  		<td width="40%">Date of Birth</td>
-  						  		<td class="text-primary"></td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Time of Birth</td>
-  						  		<td class="text-primary">04:35:AM</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Place of Birth</td>
-  						  		<td class="text-primary">London</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Height</td>
-  						  		<td class="text-primary">6 ft 1 in</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Weight</td>
-  						  		<td class="text-primary">75 kgs</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Caste</td>
-  						  		<td class="text-primary">Lorem ipsum</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Marital Status</td>
-  						  		<td class="text-primary">Unmarried</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Diet</td>
-  						  		<td class="text-primary">Veg</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Smoke</td>
-  						  		<td class="text-primary">No</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Drink</td>
-  						  		<td class="text-primary">Non Alcoholic</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Body Type</td>
-  						  		<td class="text-primary">Average</td>
-  						  	</tr>
-                  <tr>
-                    <td>Complexion</td>
-                    <td class="text-primary">lorem ipsum </td>
-                  </tr>
-  						  	<tr>
-  						  		<td>Physical Disability</td>
-  						  		<td class="text-primary"></td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>About</td>
-  						  		<td class="text-primary" style="font-size:12px;">Hello, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </td>
-  						  	</tr>
-  						  </table>
-
-				 
+            
+  				  		 <form role="form" action="#" method="post" id="personal_edit">
+           <table width="100%%" class="table-condensed"> 
+              <tr>
+          <td width="40%">First Name</td>
+          <td colspan="3"><input type="text" name="fname" value="John" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td colspan="3"><input type="text" name="lname" value="Doe" class="form-control input-sm" required></td>
+        </tr>
+         
+        <tr>
+          <td>Date of Birth</td>
+          <td width="20%">Day<input type="text" name="day" value="29" class="form-control input-sm" required></td>
+          <td width="20%">Month<input type="text" name="month" value="05" class="form-control input-sm" required></td>
+          <td width="20%">year<input type="text" name="year" value="1900" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Time of Birth</td>
+          <td colspan="3"><input type="text" name="tob" value="04:35:AM" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Place of Birth</td>
+          <td colspan="3"><input type="text" name="birthplace" value="London" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Caste</td>
+          <td colspan="3"><select name="caste" class="form-control input-sm" id="caste">
+            <option value="select">Select Caste</option>
+            <option >Lorem Ipsum</option>
+            <option >Lorem Ipsum</option>           
+            <option selected>Lorem Ipsum</option>
+            <option >Jain</option>
+            <option >Vaishnav</option>
+            <option >Brahmin</option>
+            <option >Kapol</option>
+            <option >Other</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Height</td>
+          <td><div class="form-group"><div class="input-group">
+              <input type="text" name="feets" value="6" class="form-control input-sm" required>
+              <div class="input-group-addon">ft</div>
+            </div></div></td>
+          <td><div class="form-group"><div class="input-group">
+          <input type="text" name="inches" value="1" class="form-control input-sm" required>
+          <div class="input-group-addon">in</div>
+          </div></div></td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td colspan="3">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="weight" value="75" class="form-control input-sm" required>
+                <div class="input-group-addon">Kgs</div>
               </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Marital Status</td>
+          <td colspan="3"><select name="marital" class="form-control input-sm" id="marital">
+        <option value="select">Select</option>
+        <option selected>Fresher</option>
+        <option >Engagement Broken</option>
+         
+        <option >Separated</option>
+        <option >Divorced</option>
+        <option >Widow/Widower</option>
+        </select></td>
+        </tr>
+        <tr>
+          <td>Physical Disability</td>
+          <td colspan="3"><textarea name="disability" class="form-control input-sm"></textarea></td>
+        </tr>
+        <tr>
+          <td>About Yourself</td>
+          <td colspan="3"><textarea name="about" class="form-control input-sm" required>Hello, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          </td>
+        </tr>
+        <tr>
+          <td>Diet</td>
+          <td colspan="3"><select name="diet" class="form-control input-sm" >
+              <option value="select">Select Diet</option>
+              <option selected>Veg</option>
+              <option >Non Veg</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Smoke</td>
+          <td colspan="3"><select name="smoke" class="form-control input-sm" >
+             <option value="select">Do you Smoke?</option>
+              <option >Yes</option>
+              <option selected>No</option>
+              <option >Occasional</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Drink</td>
+          <td colspan="3"><select name="drink" class="form-control input-sm" >
+              <option value="select">Do you Drink?</option>
+              <option >Alcoholic</option>
+              <option selected>Non Alcoholic</option>
+              <option >Occasional</option>
+              <option >Social</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Body Type</td>
+          <td colspan="3"><select name="body" class="form-control input-sm">
+             <option value="select">Select</option>
+              <option >Slim</option>
+              <option >Athletic</option>
+              <option selected>Average</option>
+              <option >Heavy</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Complexion</td>
+          <td colspan="3"><select name="complexion" class="form-control input-sm">
+             <option value="select">Select</option>
+              <option selected>Fair</option>
+              <option >Medium</option>
+              <option >Whitish</option>
+              <option >Dark</option>
+            </select></td>
+        </tr>
+            <tr>
+        <td><input type="submit" name="update_personal" value="Update" class="btn btn-primary"></td>
+      </tr>
+    </table>
+    </form> 
+  </div>
               <!-- /.tab-pane -->
-              <div class="tab-pane" id="education">
-                      <h4 class="text-primary">Education & Work Info</h4>
-                          <table width="80%" class="table table-condensed">
-                  <tr>
-                    <td width="40%">Qualification</td>
-                    <td class="text-primary">Postgraduate</td>
-                  </tr>
-                  <tr>
-                    <td>Degree</td>
-                    <td class="text-primary">MBA</td>
-                  </tr>
-                  <tr>
-                    <td>Profession</td>
-                    <td class="text-primary">Service</td>
-                  </tr>
-                  <tr>
-                    <td>Work Profile</td>
-                    <td class="text-primary">FINANCIAL CONSULTANT</td>
-                  </tr>
-                  <tr>
-                    <td>Self/Office Address</td>
-                    <td class="text-primary">london</td>
-                  </tr>
-                  <tr>
-                    <td>Income</td>
-                    <td class="text-primary">7 lacs lacs/year</td>
-                  </tr>
-                </table>
+  <div class="tab-pane" id="education">       
+         <form role="form" action="#" method="post" id="education_edit">
+           <table width="100%" class="table-condensed"> 
+              <tr>
+          <td width="40%">Qualification</td>
+          <td><select name="qualification" class="form-control input-sm" id="qualification">
+              <option value="select">Select Qualification</option>
+              <option >Graduate</option>
+              <option selected>Postgraduate</option>
+              <option >Undergraduate</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Degree</td>
+          <td><input type="text" name="course" value="MBA" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Profession</td>
+          <td><select name="profession" class="form-control input-sm" id="profession">
+              <option value="select">Select Profession</option>
+              <option selected>Service</option>
+              <option >Business</option>
+              <option >None</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Work Profile</td>
+          <td><input type="text" name="work_profile" value="FINANCIAL CONSULTANT" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Self/Office Address</td>
+          <td><textarea name="self_add" class="form-control input-sm" placeholder="Self Address" id="self_add" required>L&T Infotech, Mumbai </textarea></td>
+        </tr>
+        <tr>
+          <td>Office Contact No.</td>
+          <td><input type="text" name="office_contact" value="9594051616" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Income</td>
+          <td><div class="form-group"><div class="input-group">
+          <input type="text" name="income" value="7 lacs" class="form-control input-sm" required>
+          <div class="input-group-addon">lacs/yr</div>
+          </div>(eg 25)</div></td>
+        </tr>
+            <tr>
+        <td><input type="submit" name="update_education" value="Update" class="btn btn-primary"></td>
+      </tr>
+    </table>
+    </form> 
+  </div>
+          <div class="tab-pane" id="family">
           
+         <form role="form" action="#" method="post" id="family_edit">
+           <table width="100%" class="table-condensed"> 
+              <tr>
+          <td width="40%">Father's Name</td>
+          <td colspan="3"><input type="text" name="fathername" value="John Doe" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Mother's Name</td>
+          <td colspan="3"><input type="text" name="mothername" value="Nina Mcintire" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Father's Contact No.</td>
+          <td colspan="3"><input type="text" name="fathercontact" value="070 2313 4490" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Mother's Contact No.</td>
+          <td colspan="3"><input type="text" name="mothercontact" value="070 2313 4490" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Father's Occupation</td>
+          <td colspan="3"><select name="father_occ" class="form-control input-sm" id="father_occ">
+          <option value="select">Select</option>
+          <option >Service</option>
+          <option >Business</option>
+          <option selected>Professional</option>
+          <option >Retired</option>
+          <option >None</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>Native Place</td>
+          <td colspan="3"><input type="text" name="nativeplace" value="London" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Mosal</td>
+          <td colspan="3"><input type="text" name="mosal" value="lorem ipsum" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Nanaji's Name</td>
+          <td colspan="3"><input type="text" name="nanaji" value="Alexander Pierce" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Brothers</td>
+          <td><input type="text" style="width:40px;" name="bro_count" value="0" class="form-control input-sm" required></td>
+          <td>Married</td>
+          <td><input type="text" style="width:40px;" name="bro_married" value="0" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Sisters</td>
+          <td><input type="text" style="width:40px;" name="sis_count" value="1" class="form-control input-sm" required></td>
+          <td>Married</td>
+          <td><input type="text" style="width:40px;" name="sis_married" value="0" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Residence Address</td>
+          <td colspan="3"><textarea name="residence" class="form-control input-sm" required>51 Packhorse Rd, Gerrards Cross, SL9 8PE</textarea></td>
+        </tr>
+        <tr>
+          <td>Location</td>
+          <td colspan="3"><input type="text" name="location" value="UK" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td colspan="3"><select class="form-control input-sm" name="country_select" id="country_select">
+            <option>India</option>            <option>UK</option>
+            <option>Other</option>
+          </select></td>
+        </tr>
+        <tr id="country_div"></tr>
+        <tr>
+          <td>State</td>
+          <td id="state_div" colspan="3"><input type="text" name="state" value="NA" class="form-control input-sm" required>
+          <span style="float:right; font-size:10px;">select Country to change State.</span>
+          </td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td colspan="3"><input type="text" name="city" value="London" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Pincode</td>
+          <td colspan="3"><input type="text" name="pincode" value=" E10 9YU" class="form-control input-sm" required></td>
+        </tr>
+        
+        
+        <tr>
+          <td>Residence Type</td>
+          <td colspan="3"><select name="res_type" class="form-control input-sm" id="res_type">
+          <option value="select">Select</option>
+          <option selected>Ownership</option>
+          <option >Pagdi</option>
+          <option >Leave License</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>No of Rooms</td>
+          <td colspan="3"><div class="form-group"><div class="input-group">
+          <input type="text" name="rooms" value="3" class="form-control input-sm" required>
+          <div class="input-group-addon">BHK</div>
+          </div>(enter number only)</div></td>
+        </tr>
+        <tr>
+          <td>Area in sq ft</td>
+          <td colspan="3"><div class="form-group"><div class="input-group">
+          <input type="text" name="area" value="1300" class="form-control input-sm" required>
+          <div class="input-group-addon">sq ft</div>
+          </div>(enter number only)</div></td>
+        </tr>
+        <tr>
+          <td>Residence No.</td>
+          <td colspan="3"><input type="text" name="res_no" value="070 2313 4490" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Reference Name</td>
+          <td colspan="3"><input type="text" name="ref_name" value="John Doe" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Reference Contact No.</td>
+          <td colspan="3"><input type="text" name="ref_contact" value="070 2313 4490" class="form-control input-sm" required></td>
+        </tr>
+        <tr>
+          <td>Reference Place</td>
+          <td colspan="3"><input type="text" name="ref_place" value="London" class="form-control input-sm" required></td>
+        </tr>
 
-      </div>
-      <div class="tab-pane" id="family">
-          <h4 class="text-primary">Family Info</h4>
-                          <table width="80%" class="table table-condensed">
-                  <tr>
-                    <td width="40%">Father's Name</td>
-                    <td class="text-primary">John Doe</td>
-                  </tr>
-                  <tr>
-                    <td>Mother's Name</td>
-                    <td class="text-primary">Nina Mcintire</td>
-                  </tr>
-                  <tr>
-                    <td>Father's Occupation</td>
-                    <td class="text-primary">Professional</td>
-                  </tr>
-                  <tr>
-                    <td>Native Place</td>
-                    <td class="text-primary">London</td>
-                  </tr>
-                  <tr>
-                    <td>Mosal</td>
-                    <td class="text-primary">lorem ipsum</td>
-                  </tr>
-                  <tr>
-                    <td>Nanaji's Name</td>
-                    <td class="text-primary">Alexander Pierce</td>
-                  </tr>
-                  <tr>
-                    <td>Brothers</td>
-                    <td class="text-primary">Total: 0 &nbsp;&nbsp;&nbsp; Married: 0</td>
-                  </tr>
-                  <tr>
-                    <td>Sisters</td>
-                    <td class="text-primary">Total: 1 &nbsp;&nbsp;&nbsp; Married: 0</td>
-                  </tr>
-                  <tr>
-                    <td>Residence Address</td>
-                    <td class="text-primary">51 Packhorse Rd, Gerrards Cross, SL9 8PE</td>
-                  </tr>
-                  <tr>
-                    <td>Location</td>
-                    <td class="text-primary">UK</td>
-                  </tr>
-                  <tr>
-                    <td>City</td>
-                    <td class="text-primary">London</td>
-                  </tr>
-                  <tr>
-                    <td>Pincode</td>
-                    <td class="text-primary">E10 9YU</td>
-                  </tr>
-                  <tr>
-                    <td>State</td>
-                    <td class="text-primary">NA</td>
-                  </tr>
-                  <tr>
-                    <td>Country</td>
-                    <td class="text-primary">UK</td>
-                  </tr>
-                  <tr>
-                    <td>Residence Type</td>
-                    <td class="text-primary">Ownership</td>
-                  </tr>
-                  <tr>
-                    <td>No. of Rooms</td>
-                    <td class="text-primary">3 BHK</td>
-                  </tr>
-                  <tr>
-                    <td>Area</td>
-                    <td class="text-primary">1300 sq ft</td>
-                  </tr>
-                </table>
-          
+
+
+            <tr>
+        <td><input type="submit" name="update_family" value="Update" class="btn btn-primary"></td>
+      </tr>
+    </table>
+    </form>
+
+
         </div> 
              <div class="tab-pane" id="contact">
               <h4 class="text-primary">Contact Info</h4>

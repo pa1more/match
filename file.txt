@@ -1,0 +1,5 @@
+pages to created
+
+login
+profile
+registration
