@@ -590,227 +590,257 @@
         <div class="col-md-9">
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#personal" data-toggle="tab">Personal</a></li>
-              <li><a href="#education" data-toggle="tab">Edu. & Work</a></li>
-              <li><a href="#family" data-toggle="tab">Family</a></li>
-			  <li><a href="#contact" data-toggle="tab">Contact</a></li>
-			  <li><a href="#photos" data-toggle="tab">Photos</a></li>
-			  <li><a href="#settings" data-toggle="tab">Medical History</a></li>
-			  
+              <li class="active"><a href="#by_name" data-toggle="tab">Search By Name</a></li>
+              <li><a href="#by_id" data-toggle="tab">Search By ID</a></li>
+              <li><a href="#by_criteria" data-toggle="tab">Search By Criteria</a></li>
+			        <li><a href="#advanced" data-toggle="tab">Advanced Search</a></li> 
             </ul>
             <div class="tab-content">
-              <div class="active tab-pane" id="personal">
-                <!-- Post -->
-                				<h4 class="text-primary">Personal Info</h4>
-  				  						  <table width="80%" class="table table-condensed">
-  						  	<tr>
-  						  		<td width="40%">Date of Birth</td>
-  						  		<td class="text-primary"></td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Time of Birth</td>
-  						  		<td class="text-primary">04:35:AM</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Place of Birth</td>
-  						  		<td class="text-primary">London</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Height</td>
-  						  		<td class="text-primary">6 ft 1 in</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Weight</td>
-  						  		<td class="text-primary">75 kgs</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Caste</td>
-  						  		<td class="text-primary">Lorem ipsum</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Marital Status</td>
-  						  		<td class="text-primary">Unmarried</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Diet</td>
-  						  		<td class="text-primary">Veg</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Smoke</td>
-  						  		<td class="text-primary">No</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Drink</td>
-  						  		<td class="text-primary">Non Alcoholic</td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>Body Type</td>
-  						  		<td class="text-primary">Average</td>
-  						  	</tr>
-                  <tr>
-                    <td>Complexion</td>
-                    <td class="text-primary">lorem ipsum </td>
-                  </tr>
-  						  	<tr>
-  						  		<td>Physical Disability</td>
-  						  		<td class="text-primary"></td>
-  						  	</tr>
-  						  	<tr>
-  						  		<td>About</td>
-  						  		<td class="text-primary" style="font-size:12px;">Hello, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </td>
-  						  	</tr>
-  						  </table>
-
-				 
-              </div>
+               <div class="tab-pane active" id="by_name">
+                  <br>
+                  <form method="post" action="#" role="form">
+                    <label>First Name</label>
+                    <input type="text" name="fname" class="form-control input-sm" style="width:300px;">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" class="form-control input-sm" style="width:300px;"><br>
+                    <input type="submit" name="search" value="Search" class="btn btn-primary">
+                  </form>
+                </div> 
+              
               <!-- /.tab-pane -->
-              <div class="tab-pane" id="education">
-        <h4 class="text-primary">Education & Work Info</h4>
-                          <table width="80%" class="table table-condensed">
-                  <tr>
-                    <td width="40%">Qualification</td>
-                    <td class="text-primary">Postgraduate</td>
-                  </tr>
-                  <tr>
-                    <td>Degree</td>
-                    <td class="text-primary">MBA</td>
-                  </tr>
-                  <tr>
-                    <td>Profession</td>
-                    <td class="text-primary">Service</td>
-                  </tr>
-                  <tr>
-                    <td>Work Profile</td>
-                    <td class="text-primary">FINANCIAL CONSULTANT</td>
-                  </tr>
-                  <tr>
-                    <td>Self/Office Address</td>
-                    <td class="text-primary">london</td>
-                  </tr>
-                  <tr>
-                    <td>Income</td>
-                    <td class="text-primary">7 lacs lacs/year</td>
-                  </tr>
-                </table>
-          
+              <div class="tab-pane" id="by_id">
+                    <br>
+                    <form method="post" action="#" role="form">
+                      <label>Profile ID (B25)</label>
+                      <input type="text" name="p_id" class="form-control input-sm" style="width:300px;"><br>
+                      <input type="submit" name="search" value="Search" class="btn btn-primary">
+                    </form>
+              </div>
 
-      </div>
-      <div class="tab-pane" id="family">
-          <h4 class="text-primary">Family Info</h4>
-                          <table width="80%" class="table table-condensed">
-                  <tr>
-                    <td width="40%">Father's Name</td>
-                    <td class="text-primary">John Doe</td>
-                  </tr>
-                  <tr>
-                    <td>Mother's Name</td>
-                    <td class="text-primary">Nina Mcintire</td>
-                  </tr>
-                  <tr>
-                    <td>Father's Occupation</td>
-                    <td class="text-primary">Professional</td>
-                  </tr>
-                  <tr>
-                    <td>Native Place</td>
-                    <td class="text-primary">London</td>
-                  </tr>
-                  <tr>
-                    <td>Mosal</td>
-                    <td class="text-primary">lorem ipsum</td>
-                  </tr>
-                  <tr>
-                    <td>Nanaji's Name</td>
-                    <td class="text-primary">Alexander Pierce</td>
-                  </tr>
-                  <tr>
-                    <td>Brothers</td>
-                    <td class="text-primary">Total: 0 &nbsp;&nbsp;&nbsp; Married: 0</td>
-                  </tr>
-                  <tr>
-                    <td>Sisters</td>
-                    <td class="text-primary">Total: 1 &nbsp;&nbsp;&nbsp; Married: 0</td>
-                  </tr>
-                  <tr>
-                    <td>Residence Address</td>
-                    <td class="text-primary">51 Packhorse Rd, Gerrards Cross, SL9 8PE</td>
-                  </tr>
-                  <tr>
-                    <td>Location</td>
-                    <td class="text-primary">UK</td>
-                  </tr>
-                  <tr>
-                    <td>City</td>
-                    <td class="text-primary">London</td>
-                  </tr>
-                  <tr>
-                    <td>Pincode</td>
-                    <td class="text-primary">E10 9YU</td>
-                  </tr>
-                  <tr>
-                    <td>State</td>
-                    <td class="text-primary">NA</td>
-                  </tr>
-                  <tr>
-                    <td>Country</td>
-                    <td class="text-primary">UK</td>
-                  </tr>
-                  <tr>
-                    <td>Residence Type</td>
-                    <td class="text-primary">Ownership</td>
-                  </tr>
-                  <tr>
-                    <td>No. of Rooms</td>
-                    <td class="text-primary">3 BHK</td>
-                  </tr>
-                  <tr>
-                    <td>Area</td>
-                    <td class="text-primary">1300 sq ft</td>
-                  </tr>
-                </table>
-          
-        </div> 
-             <div class="tab-pane" id="contact">
-              <h4 class="text-primary">Contact Info</h4>
-                <table width="80%" class="table table-condensed">
-                                    <tr>
-                    <td width="40%">Self Mobile No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                                                      <tr>
-                    <td>Office Contact No.</td>
-                    <td class="text-primary">079 6473 8268</td>
-                  </tr>
-                                                      <tr>
-                    <td>Father Contact No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                  <tr>
-                    <td>Mother Contact No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                  <tr>
-                    <td>Residence Contact No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                                  </table>
-          
-          <h4 class="text-primary">Reference Info</h4>
-                <table width="80%" class="table table-condensed">
-                                    <tr>
-                    <td>Reference Name</td>
-                    <td class="text-primary">John Doe</td>
-                  </tr>
-                  <tr>
-                    <td>Reference Contact No.</td>
-                    <td class="text-primary">079 6473 8268</td>
-                  </tr>
-                  <tr>
-                    <td>Place</td>
-                    <td class="text-primary">London</td>
-                  </tr>
-                  </table>
+     <div class="tab-pane" id="by_criteria">
+    <br>
+    <form method="post" action="#" role="form">
+      <table class="table-condensed" width="100%">
+        <tr>
+          <td width="40%"><label>Gender</label></td>
+          <td colspan="2"><select name="gender" class="form-control input-sm">
+          <option value="female">Bride (Female)</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Age</label></td>
+          <td>From<select name="from_age" class="form-control input-sm">
+            <option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option><option>60</option>          </select></td>
+          <td>To<select name="to_age" class="form-control input-sm">
+            <option>60</option><option>59</option><option>58</option><option>57</option><option>56</option><option>55</option><option>54</option><option>53</option><option>52</option><option>51</option><option>50</option><option>49</option><option>48</option><option>47</option><option>46</option><option>45</option><option>44</option><option>43</option><option>42</option><option>41</option><option>40</option><option>39</option><option>38</option><option>37</option><option>36</option><option>35</option><option>34</option><option>33</option><option>32</option><option>31</option><option>30</option><option>29</option><option>28</option><option>27</option><option>26</option><option>25</option><option>24</option><option>23</option><option>22</option><option>21</option><option>20</option><option>19</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Height</label></td>
+          <td>From<select name="from_height" class="form-control input-sm">
+            <option>4ft 0in</option><option>4ft 1in</option><option>4ft 2in</option><option>4ft 3in</option><option>4ft 4in</option><option>4ft 5in</option><option>4ft 6in</option><option>4ft 7in</option><option>4ft 8in</option><option>4ft 9in</option><option>4ft 10in</option><option>4ft 11in</option><option>5ft 0in</option><option>5ft 1in</option><option>5ft 2in</option><option>5ft 3in</option><option>5ft 4in</option><option>5ft 5in</option><option>5ft 6in</option><option>5ft 7in</option><option>5ft 8in</option><option>5ft 9in</option><option>5ft 10in</option><option>5ft 11in</option><option>6ft 0in</option><option>6ft 1in</option><option>6ft 2in</option><option>6ft 3in</option><option>6ft 4in</option><option>6ft 5in</option><option>6ft 6in</option><option>6ft 7in</option><option>6ft 8in</option><option>6ft 9in</option><option>6ft 10in</option><option>6ft 11in</option><option>7ft 0in</option><option>7ft 1in</option><option>7ft 2in</option><option>7ft 3in</option><option>7ft 4in</option><option>7ft 5in</option><option>7ft 6in</option><option>7ft 7in</option><option>7ft 8in</option><option>7ft 9in</option><option>7ft 10in</option><option>7ft 11in</option>          </select></td>
+          <td>To<select name="to_height" class="form-control input-sm">
+            <option>7ft 11in</option><option>7ft 10in</option><option>7ft 9in</option><option>7ft 8in</option><option>7ft 7in</option><option>7ft 6in</option><option>7ft 5in</option><option>7ft 4in</option><option>7ft 3in</option><option>7ft 2in</option><option>7ft 1in</option><option>7ft 0in</option><option>6ft 11in</option><option>6ft 10in</option><option>6ft 9in</option><option>6ft 8in</option><option>6ft 7in</option><option>6ft 6in</option><option>6ft 5in</option><option>6ft 4in</option><option>6ft 3in</option><option>6ft 2in</option><option>6ft 1in</option><option>6ft 0in</option><option>5ft 11in</option><option>5ft 10in</option><option>5ft 9in</option><option>5ft 8in</option><option>5ft 7in</option><option>5ft 6in</option><option>5ft 5in</option><option>5ft 4in</option><option>5ft 3in</option><option>5ft 2in</option><option>5ft 1in</option><option>5ft 0in</option><option>4ft 11in</option><option>4ft 10in</option><option>4ft 9in</option><option>4ft 8in</option><option>4ft 7in</option><option>4ft 6in</option><option>4ft 5in</option><option>4ft 4in</option><option>4ft 3in</option><option>4ft 2in</option><option>4ft 1in</option><option>4ft 0in</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Caste</label></td>
+          <td colspan="2"><select name="caste" class="form-control input-sm">
+            <option value="any">Any</option>
+            <option>Lohana Ghoghari</option>
+            <option>Lohana Halai</option>
+            <option>Lohana Kutchi</option>
+            <option>Jain</option>
+            <option>Vaishnav</option>
+            <option>Brahmin</option>
+            <option>Kapol</option>
+            <option>Other</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Marital Status</label></td>
+          <td colspan="2"><select name="marital" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Fresher</option>
+            <option>Engagement Broken</option>
+            <option>Mithi Jibh Broken</option>
+            <option>Seperated</option>
+            <option>Divorced</option>
+            <option>Widow/Widower</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>State</label></td>
+          <td colspan="2"><select name="state" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option value="outside">Outside India</option>
+            <option>Maharashtra</option><option>Andaman and Nicobar Islands</option><option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option><option>Bihar</option><option>Chandigarh</option><option>Chhattisgarh</option><option>Dadra and Nagar Haveli</option><option>Daman and Diu</option><option>Delhi</option><option>Goa</option><option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option><option>Jammu and Kashmir</option><option>Jharkhand</option><option>Karnataka</option><option>Kerala</option><option>Lakshadweep</option><option>Madhya Pradesh</option><option>Manipur</option><option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option><option>Orissa</option><option>Pondicherry</option><option>Punjab</option><option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option><option>Tripura</option><option>Uttaranchal</option><option>Uttar Pradesh</option><option>West Bengal</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Qualification</label></td>
+          <td colspan="2"><select name="qualification" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Postgraduate</option>
+            <option>Graduate</option>
+            <option>Undergraduate</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Profession</label></td>
+          <td colspan="2"><select name="profession" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Business</option>
+            <option>Service</option>
+            <option>None</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><label>Profile with Photo</label></td>
+          <td><input type="checkbox" name="photo_required" value="yes"></td>
+        </tr>
+      </table>
+      <input type="submit" name="search" value="Search" class="btn btn-primary">
+    </form>
+  </div>
 
-        </div>
+          <div class="tab-pane" id="advanced">
+    <br>
+<form method="post" action="#" role="form">
+      <table class="table-condensed" width="100%">
+        <tr>
+          <td width="40%"><label>Gender</label></td>
+          <td colspan="2"><select name="gender" class="form-control input-sm">
+            <option value="female">Bride (Female)</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Age</label></td>
+          <td>From<select name="from_age" class="form-control input-sm">
+            <option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option><option>60</option>          </select></td>
+          <td>To<select name="to_age" class="form-control input-sm">
+            <option>60</option><option>59</option><option>58</option><option>57</option><option>56</option><option>55</option><option>54</option><option>53</option><option>52</option><option>51</option><option>50</option><option>49</option><option>48</option><option>47</option><option>46</option><option>45</option><option>44</option><option>43</option><option>42</option><option>41</option><option>40</option><option>39</option><option>38</option><option>37</option><option>36</option><option>35</option><option>34</option><option>33</option><option>32</option><option>31</option><option>30</option><option>29</option><option>28</option><option>27</option><option>26</option><option>25</option><option>24</option><option>23</option><option>22</option><option>21</option><option>20</option><option>19</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Height</label></td>
+          <td>From<select name="from_height" class="form-control input-sm">
+            <option>4ft 0in</option><option>4ft 1in</option><option>4ft 2in</option><option>4ft 3in</option><option>4ft 4in</option><option>4ft 5in</option><option>4ft 6in</option><option>4ft 7in</option><option>4ft 8in</option><option>4ft 9in</option><option>4ft 10in</option><option>4ft 11in</option><option>5ft 0in</option><option>5ft 1in</option><option>5ft 2in</option><option>5ft 3in</option><option>5ft 4in</option><option>5ft 5in</option><option>5ft 6in</option><option>5ft 7in</option><option>5ft 8in</option><option>5ft 9in</option><option>5ft 10in</option><option>5ft 11in</option><option>6ft 0in</option><option>6ft 1in</option><option>6ft 2in</option><option>6ft 3in</option><option>6ft 4in</option><option>6ft 5in</option><option>6ft 6in</option><option>6ft 7in</option><option>6ft 8in</option><option>6ft 9in</option><option>6ft 10in</option><option>6ft 11in</option><option>7ft 0in</option><option>7ft 1in</option><option>7ft 2in</option><option>7ft 3in</option><option>7ft 4in</option><option>7ft 5in</option><option>7ft 6in</option><option>7ft 7in</option><option>7ft 8in</option><option>7ft 9in</option><option>7ft 10in</option><option>7ft 11in</option>          </select></td>
+          <td>To<select name="to_height" class="form-control input-sm">
+            <option>7ft 11in</option><option>7ft 10in</option><option>7ft 9in</option><option>7ft 8in</option><option>7ft 7in</option><option>7ft 6in</option><option>7ft 5in</option><option>7ft 4in</option><option>7ft 3in</option><option>7ft 2in</option><option>7ft 1in</option><option>7ft 0in</option><option>6ft 11in</option><option>6ft 10in</option><option>6ft 9in</option><option>6ft 8in</option><option>6ft 7in</option><option>6ft 6in</option><option>6ft 5in</option><option>6ft 4in</option><option>6ft 3in</option><option>6ft 2in</option><option>6ft 1in</option><option>6ft 0in</option><option>5ft 11in</option><option>5ft 10in</option><option>5ft 9in</option><option>5ft 8in</option><option>5ft 7in</option><option>5ft 6in</option><option>5ft 5in</option><option>5ft 4in</option><option>5ft 3in</option><option>5ft 2in</option><option>5ft 1in</option><option>5ft 0in</option><option>4ft 11in</option><option>4ft 10in</option><option>4ft 9in</option><option>4ft 8in</option><option>4ft 7in</option><option>4ft 6in</option><option>4ft 5in</option><option>4ft 4in</option><option>4ft 3in</option><option>4ft 2in</option><option>4ft 1in</option><option>4ft 0in</option>          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Caste</label></td>
+          <td colspan="2"><select name="caste" class="form-control input-sm">
+            <option value="any">Any</option>
+            <option>Lohana Ghoghari</option>
+            <option>Lohana Halai</option>
+            <option>Lohana Kutchi</option>
+            <option>Jain</option>
+            <option>Vaishnav</option>
+            <option>Brahmin</option>
+            <option>Kapol</option>
+            <option>Other</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Marital Status</label></td>
+          <td colspan="2"><select name="marital" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Fresher</option>
+            <option>Engagement Broken</option>
+            <option>Mithi Jibh Broken</option>
+            <option>Seperated</option>
+            <option>Divorced</option>
+            <option>Widow/Widower</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Qualification</label></td>
+          <td colspan="2"><select name="qualification" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Postgraduate</option>
+            <option>Graduate</option>
+            <option>Undergraduate</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Course</label></td>
+          <td colspan="2">
+            <input type="text" name="course" placeholder="Enter Course keyword" class="form-control input-sm">
+          </td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Profession</label></td>
+          <td colspan="2"><select name="profession" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Business</option>
+            <option>Service</option>
+            <option>None</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Work Profile</label></td>
+          <td colspan="2">
+            <input type="text" name="work_profile" placeholder="Enter Work Profile keyword" class="form-control input-sm">
+          </td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Income</label></td>
+          <td>
+            From<input type="text" name="from_income" class="form-control input-sm">lacs
+          </td>
+          <td>
+            To<input type="text" name="to_income" class="form-control input-sm">lacs
+          </td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Diet</label></td>
+          <td colspan="2"><select name="diet" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Veg</option>
+            <option>Non Veg</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Smoke</label></td>
+          <td colspan="2"><select name="smoke" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Drink</label></td>
+          <td colspan="2"><select name="drink" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Alcoholic</option>
+            <option>Non Alcoholic</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Body Type</label></td>
+          <td colspan="2"><select name="body" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Slim</option>
+            <option>Athletic</option>
+            <option>Average</option>
+            <option>Heavy</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td width="40%"><label>Complexion</label></td>
+          <td colspan="2"><select name="complexion" class="form-control input-sm">
+            <option value="any">Doesn't Matter</option>
+            <option>Fair</option>
+            <option>Medium</option>
+            <option>Whitish</option>
+            <option>Dark</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><label>Profile with Photo</label></td>
+          <td><input type="checkbox" name="photo_required" value="yes"></td>
+        </tr>
+      </table>
+      <input type="submit" name="search" value="Search" class="btn btn-primary">
+    </form>    
+  </div>
+
         <div class="tab-pane" id="photos">
           <br>
           <a class="fancybox" rel="gallery1" href="dist/img/avatar04.png"><img src="dist/img/avatar04.png" class="img-thumbnail" width="180"></a>
