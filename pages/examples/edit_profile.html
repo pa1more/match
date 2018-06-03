@@ -592,14 +592,13 @@
             <ul class="nav nav-tabs">
               <li class="active"><a href="#personal" data-toggle="tab">Personal</a></li>
               <li><a href="#education" data-toggle="tab">Edu. & Work</a></li>
-              <li><a href="#family" data-toggle="tab">Family</a></li>
-			   
+              <li><a href="#family" data-toggle="tab">Family</a></li> 
             </ul>
             <div class="tab-content">
               <div class="active tab-pane" id="personal">
-            
-  				  		 <form role="form" action="#" method="post" id="personal_edit">
-           <table width="100%%" class="table-condensed"> 
+                <!-- Post -->
+                     <form role="form" action="#" method="post" id="personal_edit">
+      <table width="100%%" class="table-condensed"> 
               <tr>
           <td width="40%">First Name</td>
           <td colspan="3"><input type="text" name="fname" value="John" class="form-control input-sm" required></td>
@@ -608,12 +607,19 @@
           <td>Last Name</td>
           <td colspan="3"><input type="text" name="lname" value="Doe" class="form-control input-sm" required></td>
         </tr>
-         
-        <tr>
+        <!-- <tr>
+          <td>Self Mobile No.</td>
+          <td colspan="3"><input type="text" name="self_mob" value="9220545661" class="form-control input-sm" required></td>
+        </tr> -->
+        <!-- <tr>
+          <td>Email ID</td>
+          <td colspan="3"><input type="email" name="email" value="bharatichandan@gmail.com" class="form-control input-sm" required></td>
+        </tr> -->
+                    <tr>
           <td>Date of Birth</td>
-          <td width="20%">Day<input type="text" name="day" value="29" class="form-control input-sm" required></td>
-          <td width="20%">Month<input type="text" name="month" value="05" class="form-control input-sm" required></td>
-          <td width="20%">year<input type="text" name="year" value="1900" class="form-control input-sm" required></td>
+          <td width="20%">Day<input type="text" name="day" value="" class="form-control input-sm" required></td>
+          <td width="20%">Month<input type="text" name="month" value="" class="form-control input-sm" required></td>
+          <td width="20%">year<input type="text" name="year" value="19" class="form-control input-sm" required></td>
         </tr>
         <tr>
           <td>Time of Birth</td>
@@ -627,9 +633,9 @@
           <td>Caste</td>
           <td colspan="3"><select name="caste" class="form-control input-sm" id="caste">
             <option value="select">Select Caste</option>
-            <option >Lorem Ipsum</option>
-            <option >Lorem Ipsum</option>           
-            <option selected>Lorem Ipsum</option>
+            <option >Lorem ipsum</option>
+            <option >Lorem ipsum</option>           
+            <option selected>Lorem ipsum</option>
             <option >Jain</option>
             <option >Vaishnav</option>
             <option >Brahmin</option>
@@ -666,7 +672,7 @@
         <option value="select">Select</option>
         <option selected>Fresher</option>
         <option >Engagement Broken</option>
-         
+        <option >Mithi Jibh Broken</option>
         <option >Separated</option>
         <option >Divorced</option>
         <option >Widow/Widower</option>
@@ -678,7 +684,8 @@
         </tr>
         <tr>
           <td>About Yourself</td>
-          <td colspan="3"><textarea name="about" class="form-control input-sm" required>Hello, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          <td colspan="3"><textarea name="about" class="form-control input-sm" required>Hello, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</textarea>
+          (max 300 chars)
           </td>
         </tr>
         <tr>
@@ -732,11 +739,14 @@
         <td><input type="submit" name="update_personal" value="Update" class="btn btn-primary"></td>
       </tr>
     </table>
-    </form> 
-  </div>
+    </form>
+
+
+         
+              </div>
               <!-- /.tab-pane -->
-  <div class="tab-pane" id="education">       
-         <form role="form" action="#" method="post" id="education_edit">
+              <div class="tab-pane" id="education">
+                      <form role="form" action="#" method="post" id="education_edit">
            <table width="100%" class="table-condensed"> 
               <tr>
           <td width="40%">Qualification</td>
@@ -766,7 +776,7 @@
         </tr>
         <tr>
           <td>Self/Office Address</td>
-          <td><textarea name="self_add" class="form-control input-sm" placeholder="Self Address" id="self_add" required>L&T Infotech, Mumbai </textarea></td>
+          <td><textarea name="self_add" class="form-control input-sm" placeholder="Self Address" id="self_add" required>Lorem Ipsum </textarea></td>
         </tr>
         <tr>
           <td>Office Contact No.</td>
@@ -784,10 +794,11 @@
       </tr>
     </table>
     </form> 
-  </div>
-          <div class="tab-pane" id="family">
           
-         <form role="form" action="#" method="post" id="family_edit">
+
+              </div>
+              <div class="tab-pane" id="family">
+                        <form role="form" action="#" method="post" id="family_edit">
            <table width="100%" class="table-condensed"> 
               <tr>
           <td width="40%">Father's Name</td>
@@ -920,56 +931,12 @@
     </table>
     </form>
 
+             </div> 
+              
+           
 
-        </div> 
-             <div class="tab-pane" id="contact">
-              <h4 class="text-primary">Contact Info</h4>
-                <table width="80%" class="table table-condensed">
-                                    <tr>
-                    <td width="40%">Self Mobile No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                                                      <tr>
-                    <td>Office Contact No.</td>
-                    <td class="text-primary">079 6473 8268</td>
-                  </tr>
-                                                      <tr>
-                    <td>Father Contact No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                  <tr>
-                    <td>Mother Contact No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                  <tr>
-                    <td>Residence Contact No.</td>
-                    <td class="text-primary">070 2313 4490</td>
-                  </tr>
-                                  </table>
-          
-          <h4 class="text-primary">Reference Info</h4>
-                <table width="80%" class="table table-condensed">
-                                    <tr>
-                    <td>Reference Name</td>
-                    <td class="text-primary">John Doe</td>
-                  </tr>
-                  <tr>
-                    <td>Reference Contact No.</td>
-                    <td class="text-primary">079 6473 8268</td>
-                  </tr>
-                  <tr>
-                    <td>Place</td>
-                    <td class="text-primary">London</td>
-                  </tr>
-                  </table>
-
-        </div>
-        <div class="tab-pane" id="photos">
-          <br>
-          <a class="fancybox" rel="gallery1" href="dist/img/avatar04.png"><img src="dist/img/avatar04.png" class="img-thumbnail" width="180"></a>
-          <a class="fancybox" rel="gallery1" href="dist/img/avatar.png"><img src="dist/img/avatar.png" class="img-thumbnail" width="180"></a>
-          <a class="fancybox" rel="gallery1" href="dist/img/avatar3.png"><img src="dist/img/avatar3.png" class="img-thumbnail" width="180"></a>
-        </div>
+         </div>
+         
     </div>
 
   </div>
