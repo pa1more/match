@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>MatchMaker | Registration</title>
+  <title>MatchMaker | Register</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -14,8 +14,12 @@
   <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
   <!-- iCheck -->
-  <link rel="stylesheet" href="../../plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="../../plugins/iCheck/square/blue.css">         
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,74 +30,862 @@
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53649673-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  var ie = (function(){
+
+    var undef,
+        v = 3,
+        div = document.createElement('div'),
+        all = div.getElementsByTagName('i');
+
+    while (
+        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+        all[0]
+    );
+
+    return v > 4 ? v : undef;
+
+}());
+
+  if(ie < 8){
+    window.location = "http://jayendrasodha.in/home/browser/"
+  }
+
+</script>
+
+<!-- Hotjar Tracking Code for jayendrasodha.in -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:524862,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<style type="text/css">
+  
+.reg_desc {
+    border: thin solid #ccc;
+    width: 240px;
+    height: 400px;
+    /* margin-top: 35px; */
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 1px;
+    box-shadow: 3px 3px 2px #eee;
+}
+
+#register_form fieldset {
+    background-color: #fff;
+    /* display: none; */
+    border: thin solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    /* position: absolute; */
+    box-shadow: 0px 2px 2px #ccc;
+</style>
+
+
+
+
 </head>
-<body class="hold-transition register-page">
-<div class="register-box">
-  <div class="register-logo">
-    <a href="../../index2.html"><b>Match</b>Maker</a>
-  </div>
-  <ul class="progress_bar" align="center">
-    <li class="label label-default label-info" id="basic">Basic Info</li>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav" style="background-color: #f1f1f1;">
+
+
+   <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="home.html" class="navbar-brand"><b>Match</b>Maker</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#login.html">Login</a></li>
+            <li><a href="#register.html">Register</a></li>             
+             <li><a href="#about.html">About Us</a></li>             
+             <li><a href="#service.html">Services</a></li>             
+             <li><a href="#team.html">Team</a></li>             
+             <li><a href="#gallry.html">Gallery</a></li>
+             <li><a href="#contact.html">Contact Us</a></li> 
+          </ul>
+           
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+         
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+   
+   
+ <script>
+$(document).ready(function() {
+      var sideslider = $('[data-toggle=collapse-side]');
+      var sel = sideslider.attr('data-target');
+      var sel2 = sideslider.attr('data-target-2');
+      sideslider.click(function(event){
+          $(sel).toggleClass('in');
+          $(sel2).toggleClass('out');
+      });
+  });
+</script>
+
+<div class="side-collapse-container">
+<script type="text/javascript">
+  var ie = (function(){
+ 
+    var undef,
+        v = 3,
+        div = document.createElement('div'),
+        all = div.getElementsByTagName('i');
+ 
+    while (
+        div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+        all[0]
+    );
+ 
+    return v > 4 ? v : undef;
+ 
+}());
+
+  if(ie < 9){
+    window.location = ""
+  }
+</script>
+
+<div class="container">
+  <br>
+  <h3 class="text-center">Register Here.</h3>
+  <br>
+
+<div class="row">
+  
+  <div class="col-md-6 col-md-push-3">
+    <ul class="progress_bar" align="center">
+    <li class="label label-default label-info" id="basic">Basic Info</li> 
     <li class="label label-default" id="personal">Personal Info</li>
     <li class="label label-default" id="education">Education & Work Info</li>
     <li class="label label-default" id="family">Family Info</li>
     </ul>
-
-  <div class="register-box-body">
-   
-
-    <p class="login-box-msg">Register a new membership</p>
-
-
-    <form action="../../index.html" method="post">
-      <div class="form-group has-feedback">
-        <input type="text" class="form-control" placeholder="Full name">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Retype password">
-        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
-      </div>
+  <form method="post" id="register_form" role="form" action="#" enctype="multipart/form-data">
+    <fieldset id="#basic">
+      <h3>Basic Information</h3>
+      <label>Email ID</label>
+      <span id="emailErr" class="errormsg"></span>
+      <input type="text" name="email" id="email" placeholder="Enter Email" class="form-control input-sm">
+      <br>
+      <label>Password</label>
+      <span id="passErr" class="errormsg"></span>
+      <input type="password" name="password" id="password" placeholder="Enter Password" class="form-control input-sm">
+      <br>
+      <label>Re-type Password</label>
+      <span id="repassErr" class="errormsg"></span>
+      <input type="password" name="re_password" id="re_password" placeholder="Re-Enter Password" class="form-control input-sm">
+      <br>
       <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> I agree to the <a href="#">terms</a>
-            </label>
+        <div class="col-xs-6">
+          <label>First Name</label>
+          <span id="fnameErr" class="errormsg"></span>
+          <input type="fname" name="fname" id="fname" placeholder="First Name" class="form-control input-sm"> 
+        </div>
+        <div class="col-xs-6">
+          <label>Last Name</label>
+          <span id="lnameErr" class="errormsg"></span>
+          <input type="lname" name="lname" id="lname" placeholder="Last Name" class="form-control input-sm">  
+        </div>
+      </div>
+      <br>
+      <span id="genderErr" class="errormsg"></span>
+      <div class="row">
+        <div class="col-xs-3">
+          Gender: 
+        </div>
+        <div class="col-xs-3">
+          <input type="radio" name="gender" value="male"> Male
+        </div>
+        <div class="col-xs-3">
+          <input type="radio" name="gender" value="female"> Female
+        </div>
+      </div>
+      <br>
+      <label>Self Mobile No. (this will be your login ID)</label>
+      <span id="self_mobErr" class="errormsg"></span>
+      <input type="text" name="self_mob" id="self_mob" placeholder="Self Mobile No." class="form-control input-sm">
+      <br>
+      <input type="button" name="next" value="Next" class="btn btn-primary next_btn1">
+    </fieldset>
+
+
+
+
+
+
+<!--******************* personal form *******************8 -->
+
+
+    <fieldset>
+      <h3>Personal Information</h3>
+      <span id="dobErr" class="errormsg"></span>
+      <div class="row">
+        <div class="col-xs-3">
+          <label>Date of Birth</label>
+        </div>
+        <div class="col-xs-3">
+          <select name="day" class="form-control input-sm" id="day">
+            <option>Day</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option>          </select>
+        </div>
+        <div class="col-xs-3">
+          <select name="month" class="form-control input-sm" id="month">
+            <option>Month</option>
+            <option value="01">Jan</option>
+            <option value="02">Feb</option>
+            <option value="03">Mar</option>
+            <option value="04">Apr</option>
+            <option value="05">May</option>
+            <option value="06">Jun</option>
+            <option value="07">Jul</option>
+            <option value="08">Aug</option>
+            <option value="09">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+        </div>
+        <div class="col-xs-3">
+          <select name="year" class="form-control input-sm" id="year">
+            <option>Year</option>
+            <option>1996</option><option>1995</option><option>1994</option><option>1993</option><option>1992</option><option>1991</option><option>1990</option><option>1989</option><option>1988</option><option>1987</option><option>1986</option><option>1985</option><option>1984</option><option>1983</option><option>1982</option><option>1981</option><option>1980</option><option>1979</option><option>1978</option><option>1977</option><option>1976</option><option>1975</option><option>1974</option><option>1973</option><option>1972</option><option>1971</option><option>1970</option><option>1969</option><option>1968</option><option>1967</option><option>1966</option><option>1965</option><option>1964</option><option>1963</option><option>1962</option><option>1961</option><option>1960</option><option>1959</option><option>1958</option><option>1957</option><option>1956</option><option>1955</option><option>1954</option><option>1953</option><option>1952</option><option>1951</option>          </select>
+        </div>
+      </div>
+      <br>
+      <span id="tobErr" class="errormsg"></span>
+      <div class="row">
+        <div class="col-xs-3">
+          <label>Time of Birth</label>
+        </div>
+        <div class="col-xs-3">
+          <select name="hr" class="form-control input-sm" id="hr">
+            <option>Hr</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option><option>11</option><option>12</option>         </select>
+        </div>
+        <div class="col-xs-3">
+          <select name="min" class="form-control input-sm" id="min">
+            <option>Min</option>
+            <option>00</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option>          </select>
+        </div>
+        <div class="col-xs-3">
+          <select name="time" class="form-control input-sm" id="time">
+            <option>-</option>
+            <option>AM</option>
+            <option>PM</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      
+      <div class="row">
+        <div class="col-xs-6">
+          <label>Place of Birth</label>
+          <span id="pobErr" class="errormsg"></span>
+          <input type="text" name="birthplace" id="birthplace" placeholder="Place of Birth" class="form-control input-sm">
+        </div>
+        <div class="col-xs-6">
+          <label>Caste</label>
+          <span id="casteErr" class="errormsg"></span>
+          <select name="caste" class="form-control input-sm" id="caste">
+            <option value="select">Select Caste</option>
+            <option>Lohana Ghoghari</option>
+            <option>Lohana Halai</option>           
+            <option>Lohana Kutchi</option>
+            <option>Jain</option>
+            <option>Vaishnav</option>
+            <option>Brahmin</option>
+            <option>Kapol</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-7">
+          <label>Height</label>
+          <span id="heightErr" class="errormsg"></span>
+            <div class="row">
+            <div class="col-xs-6">
+              <div class="input-group">
+                <select name="feets" class="form-control input-sm" id="feets" style="font-size:11px;">
+                    <option>-</option>
+                    <option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>                  </select> <span class="input-group-addon">ft</span> 
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="input-group">
+                <select name="inches" class="form-control input-sm" id="inches" style="font-size:11px;">
+                    <option>-</option>
+                    <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>                  </select> <span class="input-group-addon">in</span> 
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-xs-3">
+          <label>Weight</label>
+          <span id="weightErr" class="errormsg"></span>
+          <div class="input-group">
+            <input type="text" name="weight" class="form-control input-sm" id="weight" style="width:60px;">
+            <span class="input-group-addon">kgs</span>
+          </div>
+        </div>      
+      </div>
+      <br>
+      <label>Marital Status</label>
+      <span id="maritalErr" class="errormsg"></span>
+      <select name="marital" class="form-control input-sm" id="marital">
+        <option value="select">Select</option>
+        <option>Fresher</option>
+        <option>Engagement Broken</option>
+        <option>Mithi Jibh Broken</option>
+        <option>Separated</option>
+        <option>Divorced</option>
+        <option>Widow/Widower</option>
+        </select>
+        <br>
+        <label>Physical Disability (if any)</label>
+        <textarea name="disability" class="form-control input-sm" placeholder="Physical Disability (if any)" id="disability"></textarea>
+        <br>
+        <label>About Yourself (max 300 chars)</label>
+        <span id="aboutErr" class="errormsg"></span>
+        <textarea name="about" class="form-control input-sm" placeholder="About Yourself" id="about"></textarea>
+        <br>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Diet</label>
+            <span id="dietErr" class="errormsg"></span>
+            <select name="diet" class="form-control input-sm" id="diet">
+              <option value="select">Select Diet</option>
+              <option>Veg</option>
+              <option>Non Veg</option>
+            </select>
+          </div>
+          <div class="col-xs-6">
+            <label>Smoke</label>
+            <span id="smokeErr" class="errormsg"></span>
+            <select name="smoke" class="form-control input-sm" id="smoke">
+              <option value="select">Do you Smoke?</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Occasional</option>
+            </select>
+          </div>        
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Drink</label>
+            <span id="drinkErr" class="errormsg"></span>
+            <select name="drink" class="form-control input-sm" id="drink">
+              <option value="select">Do you Drink?</option>
+              <option>Alcoholic</option>
+              <option>Non Alcoholic</option>
+              <option>Occasional</option>
+              <option>Social</option>
+            </select>
+          </div>
+          <div class="col-xs-6">
+            <label>Body Type</label>
+            <span id="bodyErr" class="errormsg"></span>
+            <select name="body" class="form-control input-sm" id="body">
+              <option value="select">Select</option>
+              <option>Slim</option>
+              <option>Athletic</option>
+              <option>Average</option>
+              <option>Heavy</option>
+            </select>
+          </div>        
+        </div>
+        <br>
+        <label>Complexion</label>
+          <span id="complexionErr" class="errormsg"></span>
+          <select name="complexion" class="form-control input-sm" id="complexion" style="width:212px;">
+            <option value="select">Select</option>
+            <option>Fair</option>
+            <option>Medium</option>
+            <option>Whitish</option>
+            <option>Dark</option>
+          </select>
+          <br>
+        <input type="button" name="prev" value="Previous" class="btn btn-primary prev_btn">
+        <input type="button" name="next" value="Next" class="btn btn-primary next_btn2">
+        </fieldset>
+
+
+
+
+<!-- ************************* education and work *****************-->
+
+
+        <fieldset>
+
+        <h3>Education and Work Information</h3>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Qualification</label>
+            <span id="qualificationErr" class="errormsg"></span>
+            <select name="qualification" class="form-control input-sm" id="qualification">
+              <option value="select">Select Qualification</option>
+              <option>Graduate</option>
+              <option>Postgraduate</option>
+              <option>Undergraduate</option>
+            </select>
+          </div>
+          <div class="col-xs-6">
+            <label>Degree</label>
+            <span id="courseErr" class="errormsg"></span>
+            <input type="text" name="course" id="course" placeholder="Which Degree?" class="form-control input-sm">
+          </div>        
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Profession</label>
+            <span id="professionErr" class="errormsg"></span>
+            <select name="profession" class="form-control input-sm" id="profession">
+              <option value="select">Select Profession</option>
+              <option>Service</option>
+              <option>Business</option>
+              <option>None</option>
+            </select>
+          </div>
+          <div class="col-xs-6">
+            <label>Work Profile</label>
+            <span id="work_profileErr" class="errormsg"></span>
+            <input type="text" name="work_profile" id="work_profile" placeholder="Work Profile" class="form-control input-sm">
+          </div>        
+        </div>
+        <br>
+        <label>Self/Office Address (with city, country)</label>
+        <span id="self_addErr" class="errormsg"></span>
+        <textarea name="self_add" class="form-control input-sm" placeholder="Self/Office Address" id="self_add"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-xs-6">
+            <label>Office Contact No.</label>
+            <span id="office_contactErr" class="errormsg"></span>
+            <input type="text" name="office_contact" id="office_contact" placeholder="Office Contact No." class="form-control input-sm">
+          </div>
+          <div class="col-xs-6">
+            <label>Yearly Income (eg : 25)</label>
+            <span id="incomeErr" class="errormsg"></span>
+            <div class="input-group">
+              <input type="text" name="income" id="income" placeholder="Yearly Income" class="form-control input-sm" > 
+              <span class="input-group-addon">lacs/yr</span>
+            </div>
+          </div>        
+        </div>
+        <br>
+        <input type="button" name="prev" value="Previous" class="btn btn-primary prev_btn">
+        <input type="button" name="next" value="Next" class="btn btn-primary next_btn3">
+        
+    </fieldset>
+
+
+
+
+<!--**************************** family information ***********************-->
+
+  <fieldset>
+    <h3>Family Information</h3>
+    <div class="row">
+        <div class="col-xs-6">
+          <label>Father's Name</label>
+          <span class="errormsg" id="fathernameErr"></span>
+          <input type="text" name="fathername" id="fathername" placeholder="Father's Name" class="form-control input-sm">
+        </div>
+        <div class="col-xs-6">
+          <label>Mother's Name</label>
+          <span class="errormsg" id="mothernameErr"></span>
+          <input type="text" name="mothername" id="mothername" placeholder="Mother's Name" class="form-control input-sm">
+        </div>        
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-6">
+          <label>Father's Contact No.</label>
+          <span class="errormsg" id="mothercontwctErr"></span>
+          <input type="text" name="fathercontact" id="fathercontact" placeholder="Father's Contact No." class="form-control input-sm">
+        </div>
+        <div class="col-xs-6">
+          <label>Mother's Contact No.</label>
+          <span class="errormsg" id="mothercontactErr"></span>
+          <input type="text" name="mothercontact" id="mothercontact" placeholder="Mother's Contact No." class="form-control input-sm">
+        </div>        
+      </div>
+      <br>
+          <label>Father's Occupation</label>
+          <span class="errormsg" id="father_occErr"></span>
+          <select name="father_occ" class="form-control input-sm" id="father_occ">
+          <option value="select">Select</option>
+          <option>Service</option>
+          <option>Business</option>
+          <option>Professional</option>
+          <option>Retired</option>
+          <option>None</option>
+          </select>
+    <br>
+      <div class="row">
+        <div class="col-xs-6">
+          <label>Native Place</label>
+          <span class="errormsg" id="nativeplaceErr"></span>
+          <input type="text" name="nativeplace" id="nativeplace" placeholder="Your native place" class="form-control input-sm">
+        </div>
+        <div class="col-xs-6">
+          <label>Mosal</label>
+          <span class="errormsg" id="mosalErr"></span>
+          <input type="text" name="mosal" id="mosal" placeholder="Mosal Surname" class="form-control input-sm">
+        </div>
+      </div>
+      <br>
+      <label>Nanaji's Name</label>
+      <span class="errormsg" id="nanajiErr"></span>
+    <input type="text" name="nanaji" id="nanaji" placeholder="Your Nanaji's Name" class="form-control input-sm">
+      <br>
+      <div class="row">
+        <div class="col-xs-2">
+          <label>Brothers</label>
+          <input type="text" name="bro_count" id="bro_count" class="form-control input-sm" value="0">
+        </div>
+        <div class="col-xs-2">
+          <label>Married</label>
+          <input type="text" name="bro_married" id="bro_married" class="form-control input-sm" value="0">
+        </div>
+        <div class="col-xs-3"></div>
+        <div class="col-xs-2">
+          <label>Sisters</label>
+          <input type="text" name="sis_count" id="sis_count" class="form-control input-sm" value="0">
+        </div>
+        <div class="col-xs-2">
+          <label>Married</label>
+          <input type="text" name="sis_married" id="sis_married" class="form-control input-sm" value="0">
+        </div>
+      </div>
+      <hr>
+      <h4>Residential Details</h4>
+      <br>
+      <label>Residence Address</label>
+      <span class="errormsg" id="residenceErr"></span>
+      <textarea name="residence" placeholder="Residence Address" class="form-control input-sm" id="residence"></textarea>
+      <br>
+      <label>Location (eg Borivali, Kalyan, Thane, Surat, etc)</label>
+      <input type="text" name="location" id="location" class="form-control input-sm" placeholder="Enter your area location">
+    <br>
+      <div class="row">
+        <div class="col-xs-6" >
+          <label>Select Country</label>
+          <span id="countryErr" class="errormsg"></span>
+          <select class="form-control input-sm" name="country_select" id="country_select">
+            <option>Select</option>
+            <option>India</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-xs-6" id="country_div"></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-6" id="state_div">
+          <label>State</label>
+          <span id="stateErr" class="errormsg"></span>
+          <input type="text" name="state" placeholder="Enter State" class="form-control input-sm" id="state">
+        </div>
+        <div class="col-xs-6">
+          <label>City</label>
+          <span id="cityErr" class="errormsg"></span>
+          <input type="text" name="city" placeholder="Enter City" class="form-control input-sm" id="city">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-6">
+          <label>Pin Code</label>
+          <span id="pincodeErr" class="errormsg"></span>
+          <input type="text" name="pincode" placeholder="Pin Code" class="form-control input-sm" id="pincode">
+        </div>
+        <div class="col-xs-6">
+          <label>Type of Residence</label>
+          <span class="errormsg" id="res_typeErr"></span>
+          <select name="res_type" class="form-control input-sm" id="res_type">
+          <option value="select">Select</option>
+          <option>Ownership</option>
+          <option>Pagdi</option>
+          <option>Leave License</option>
+          </select>       
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-6">
+          <label>No. of Rooms</label>
+          <span class="errormsg" id="roomsErr"></span>
+          <div class="input-group">
+          <input type="text" name="rooms" id="rooms" class="form-control input-sm" >
+          <span class="input-group-addon">BHK</span>
           </div>
         </div>
-        <!-- /.col -->
-        <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+        <div class="col-xs-6">
+          <label>Area in sq ft</label>
+          <div class="input-group">
+          <span class="errormsg" id="areaErr"></span>
+          <input type="text" name="area" id="area" class="form-control input-sm">
+          <span class="input-group-addon">sq. ft.</span>
+          </div>
         </div>
-        <!-- /.col -->
       </div>
-    </form>
+      <br>
+      <label>Residence Phone No.</label>
+      <span class="errormsg" id="res_noErr"></span>
+      <input type="text" name="res_no" id="res_no" placeholder="Residence No. with STD code" class="form-control input-sm">
+      <br>
+      <h4>Profile Photo</h4>
+      <label>(max 5Mb) (jpg, jpeg, JPG, png, gif formats)</label>
+      <input type="file" name="photo1" id="photo1" class="form-control input-sm"><br>
+      You can upload more photos from your Dashboard..
+      <!-- <input type="file" name="photo2" id="photo2" class="form-control input-sm"><br> -->
+      <!-- <input type="file" name="photo3" id="photo3" class="form-control input-sm"><br> -->
+      <br>
+      <h4>Reference Information</h4>
+      <label>Reference Name: </label>
+      <span class="errormsg" id="ref_nameErr"></span>
+      <input type="text" name="ref_name" id="ref_name" placeholder="Your Reference Name" class="form-control input-sm"><br>
 
-     
+      <div class="row">
+        <div class="col-xs-6">
+          <label>Reference Contact No.</label>
+          <span class="errormsg" id="ref_contactErr"></span>
+          <input type="text" name="ref_contact" id="ref_contact" class="form-control input-sm">
+        </div>
+        <div class="col-xs-6">
+          <label>Place</label>
+          <span class="errormsg" id="ref_placeErr"></span>
+          <input type="text" name="ref_place" id="ref_place" class="form-control input-sm">
+        </div>
+      </div>
+      <!-- <br>
+      <label>Privacy Settings</label>
+      <span class="errormsg" id="privacyErr"></span><br>
+      <input type="radio" name="privacy" id="privacy" value="private">Private
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="privacy" id="privacy" value="public">Public<br>
+      [Note: Public Display shows all the Contact Details] -->
+      <!-- <br> -->
+      <br>
+      <span id="leaveblank">Leave Blank : <input type="text" id="leaveblank" name="test"></span>
+        <input type="button" name="prev" value="Previous" class="btn btn-primary prev_btn">
 
-    <a href="login.html" class="text-center">I already have a membership</a>
+      <input type="submit" name="submit" value="Submit" class="btn btn-primary btn_submit">
+      (Your Profile is being uploaded with your Photo....please wait it will take some time...)
+<br><br>
+<span id="loading" style="display:none;">
+  <!-- <img src="http://jayendrasodha.in/public/loading.gif" height=50> -->
+  <!-- <b>PLEASE WAIT.... DO NOT REFRESH THE PAGE....</b> -->
+</span>
+
+  </fieldset>
+
+
+  </form>
+  <br><br><br><br>
   </div>
 
+  <div class="col-md-3 col-md-pull-6 reg-left" align="center">
+    <h3 class="tex-primary">How to Register?</h3>
+    <br>
+    <div class="reg_desc">
+    <h4 class="text-primary">Basic Information</h4>
+    Just tell your name and your login credentials.
+    <br><br>
+    <h4 class="text-primary">Personal Information</h4>
+    Tell us when and where you were born and your height, weight and some personal attributes.<br><br>
+    <h4 class="text-primary">Education & Work Information</h4>
+    Some things about your education background and your current work profile.<br><br>
+    <h4 class="text-primary">Family Information</h4>
+    Write about your parents and residence details.
+    </div>
+  </div>
+
+  <div class="col-md-3 reg-right">
+  <!-- <div class="reg_ad1"><a href="http://ceremonyresources.com" target="_blank"><img src="http://jayendrasodha.in/public/sample_ad/reg_ad1.jpg"></a></div> -->
+<br>
+<div class="reg_ad2"></div>
+
+<!-- <div class="reg_ad3"></div> -->  </div>
+</div>
 
   
-  <!-- /.form-box -->
+
 </div>
-<!-- /.register-box -->
+
+<script type="text/javascript" src="http://jayendrasodha.in/public/js/reg_form_step1.js"></script>
+<script type="text/javascript" src="http://jayendrasodha.in/public/js/reg_form_step2.js"></script>
+<script type="text/javascript" src="http://jayendrasodha.in/public/js/reg_form_step3.js"></script>
+<script type="text/javascript" src="http://jayendrasodha.in/public/js/reg_form_step4.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var country_select = $('#country_select');
+    country_select.blur(getStates);
+    country_select.keyup(getStates);
+
+    
+
+    function getStates(){
+      if(country_select.val() == 'Other'){
+        $('#country_div').html('<label>Specify country</label><input class="form-control input-sm" type="text" name="country">');
+        $('#state_div').html('<label>State</label><input class="form-control input-sm" type="text" name="state" id="state">');
+        }
+
+      if(country_select.val() == 'India'){
+
+        var states = new Array("Maharashtra", "Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Pondicherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttaranchal", "Uttar Pradesh", "West Bengal");
+        var i;
+        var states_print = '<option>Select</option>';
+        for(i = 0; i < states.length; i++){
+          states_print += '<option>'+states[i]+'</option>';
+        }
+
+        $('#country_div').html('');
+        $('#state_div').html('');
+        $('#state_div').html('<label>State</label><select class="form-control input-sm" name="state" id="state">' + states_print );
+
+        }
+
+    }
+
+  });
+</script>
+
+<script>
+(function () {
+    var e = document.getElementById("leaveblank");
+    e.parentNode.removeChild(e);
+})();
+</script>
+
+<script type="text/javascript">
+  // $(document).ready(function() {
+  //  $('.btn_submit').click(function() {
+  //    $('#loading').show();
+  //  });
+  // });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#register_form').bind("keyup keypress", function(e) {
+    var code = e.keyCode || e.which; 
+    if (code  == 13) {
+    console.log('enter hit');       
+      e.preventDefault();
+      return false;
+  }
+});
+});
+</script><div class="clearfix"></div>
+<div style="background:url('http://jayendrasodha.in/public/img/border.png') repeat-x #f2f2f2; width:100%; height:10px;">
+
+</div>
+
+
+<div class="container">
+
+
+ 
+</div>
+
+
+</div>
+<!-- side-collapse-container ends -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+$(document).ready(function() {
+
+$('.conf-action').click(function(e){
+
+  if (confirm('Are you sure?')) {
+    return true;
+  }
+  else{
+    return false;
+  }
+
+});
+
+});
+</script>
+
 
 <!-- jQuery 3 -->
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- iCheck -->
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
 <script src="../../plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
