@@ -34,7 +34,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
 
-   <header class="main-header">
+  <header class="main-header">
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -59,15 +59,14 @@
              </li>     
              <li><a href="partner_choice.html">Partner's Choice</a></li>  
              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Contacts <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="interest.html">Received Interest</a></li>
-                  <li><a href="interest.html#sent">Sent Interests</a></li>
-                  <li><a href="interest.html#hidden"> Hidden Interests</a></li> 
-                  <li><a href="shotlist.html">Shortlisted Profile</a></li>
-                </ul>
-              </li>           
-            <li><a href="../frontend/contact.html">Contact</a></li>
-             <li><a href="home.html">Logout</a></li> 
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="interest.html">Received Interest</a></li>
+      <li><a href="interest.html#sent">Sent Interests</a></li>
+      <li><a href="interest.html#hidden"> HiddenInterests</a></li> 
+    </ul>
+  </li>           
+            <li><a ahref="contact.html">Contact</a></li>
+             <li><a href="logout.html">Logout</a></li> 
 
           </ul>
            
@@ -81,33 +80,24 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  
+   
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <section class="content-header container">
-      <h1>
-        Interests
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        
-        <li class="active">Interest</li>
-      </ol>
-    </section>
-
+     
     <!-- Main content -->
     <section class="content container">
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
 
           <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
+              <img class="profile-user-img img-responsive" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
 
-              <h3 class="profile-username text-center">ragini Sharma</h3>
+              <h3 class="profile-username text-center">Nina Mcintire</h3>
 
               <p class="text-muted text-center">Software Engineer</p>
 
@@ -119,11 +109,11 @@
                   <b></b> <a class="pull-right"></a>
                 </li>
                 <li class="list-group-item">
-                  <b> </b> <a class="pull-right"> </a>
+                  <b></b> <a class="pull-right"></a>
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+              <a href="#" class="btn btn-primary btn-block"><b></b></a>
             </div>
             <!-- /.box-body -->
           </div>
@@ -139,21 +129,21 @@
               <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
 
               <p class="text-muted">
-                B.S. in Computer Science from the University of Mumbai
+                B.S. in Computer Science from the University of Tennessee at Knoxville
               </p>
 
               <hr>
 
               <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-              <p class="text-muted">Maharashtra, India  </p>
+              <p class="text-muted">Malibu, California</p>
 
               <hr>
 
               <strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>
 
               <p>
-                 
+               
               </p>
 
               <hr>
@@ -166,117 +156,11 @@
           </div>
           <!-- /.box -->
         </div>
-
         <!-- /.col -->
-        <div class="col-md-6">
-             <div class="row">
-                  <div class="col-md-6 col-xs-6">
-                       <a href="search.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-search"></span> Start New Search</a>
-                  </div>
-                  <div class="col-md-6 col-xs-6">
-                    <a href="logout.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-                </div>
-        </div><br>
-          <div class="nav-tabs-custom">
-
-
-              <ul class="nav nav-tabs">
-                  <li class="active"><a href="#received" data-toggle="tab">Received Interest</a></li>
-                  <li><a href="#sent" data-toggle="tab">Sent Interest</a></li>
-                  <li><a href="#hidden" data-toggle="tab">Hidden Interest</a></li> 
-              </ul>
-             
-             
-              <!-- /.tab-pane -->
-               <div class="tab-content">
-      <div class="tab-pane active" id="received" style="height:50%; overflow:auto;">
-        <h4 class="text-primary">Interests</h4>
-        <br>
-        <table width="100%" class="table table-bordered">
-          <th>Name</th>
-          <th>Match Score</th>
-          <th >View Profile</th>
-          <th >Status</th>
-          <th width="30%">Action</th>
-          <tr><td>Monish Chandan</td> 
-            <td><span class="badge bg-red" align="center">55%</span></td>
-              <td><a href="" target="_blank" class="btn btn-info btn-xs">View Profile</a></td>
-              <td>Pending</td>
-              <td align="center">
-                <div class="btn-group">
-                  <a href="" class=" btn btn-success btn-xs conf-action">Accept</a>
-                  <a href="" class=" btn btn-danger btn-xs conf-action">Reject</a>
-                  <a href="" class=" btn btn-warning btn-xs conf-action">Hide</a>
-                </div></td><tr>  
-        </table>
-      </div>
-
-
-
-
-      <div class="tab-pane" id="sent" style="height:50%x; overflow:auto;">
-
-        <br>
-            <table width="100%" class="table table-bordered">
-          <th>Name</th>
-          <th>Match Score</th>
-          <th>View Profile</th>
-          <th>Status</th>
-          <!-- <th width="20%">Action</th> -->
-          <tr><td>Monish Chandan</td>
-            <td><span class="badge bg-red" align="center;">55%</span></td>
-            
-            <td><a href="" target="_blank" class="btn btn-info btn-xs">View Profile</a></td>
-            <td>Pending</td><tr> 
-              </table>
-              </div>
-
-
-      <div class="tab-pane" id="hidden" style="height:50%;">
-
-        <h4 class="text-center">All hidden received interests</h4>
-
-        <br>
-        You have not hidden any received interests.      </div>
-        <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div> 
-
-
-    </div>
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-  <div class="col-xs-2" align="right">
-        </div>
-  </div>
-
-</div>
-
-
-
-
-</div>
-
-        
-           
-            
+         
+          
+ 
+         
     </div>
 
   </div>
@@ -291,20 +175,27 @@
           <!-- /.nav-tabs-custom -->
         </div>
         <!-- /.col -->
-      </  div>
+      </div>
       <!-- /.row -->
 
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+       
+    </div>
+    <strong>Copyright &copy; 2014-2016  </strong> All rights
+    reserved.
+  </footer>
 
   <!-- Control Sidebar -->
-  
+   
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
+   
 </div>
 <!-- ./wrapper -->
 

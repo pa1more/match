@@ -3,3 +3,8 @@ pages to created
 login
 profile
 registration
+
+common search page
+
+add education list location list
+

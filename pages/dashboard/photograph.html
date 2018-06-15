@@ -34,7 +34,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
 
-   <header class="main-header">
+  <header class="main-header">
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -47,52 +47,48 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+            <li><a href="../frontend/home.html">Home  </a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="sr-only">(current)</span><span class="caret"></span></a>
                    <ul class="dropdown-menu" role="menu">
                     <li><a href="profile.html">View my Profile</a></li>
                    <li><a href="edit_profile.html">Edit My Profile</a></li>
                    <li><a href="partner_choice.html">Edit Partner Preferences</a></li>
                    <li><a href="photograph.html">Manage Photograph</a></li>                    
-                   <li><a href="privacy_settings.html">Privacy Settings</a></li>
+                   <li><a href="privacy.html">Privacy Settings</a></li>
                </ul>
              </li>     
              <li><a href="partner_choice.html">Partner's Choice</a></li>  
              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Contacts <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="interest.html">Received Interest</a></li>
-                  <li><a href="interest.html#sent">Sent Interests</a></li>
-                  <li><a href="interest.html#hidden"> Hidden Interests</a></li> 
-                  <li><a href="shotlist.html">Shortlisted Profile</a></li>
-                </ul>
-              </li>           
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="interest.html">Received Interest</a></li>
+      <li><a href="interest.html#sent">Sent Interests</a></li>
+      <li><a href="interest.html#hidden"> HiddenInterests</a></li> <li><a href="shotlist.html">Shortlisted Profile</a></li>
+    </ul>
+  </li>           
             <li><a href="../frontend/contact.html">Contact</a></li>
              <li><a href="home.html">Logout</a></li> 
-
           </ul>
            
         </div>
-        <!-- /.navbar-collapse -->
-        <!-- Navbar Right Menu -->
-         
-        <!-- /.navbar-custom-menu -->
+        
       </div>
       <!-- /.container-fluid -->
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  
+   
+
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper ">
     <!-- Content Header (Page header) -->
-    <section class="content-header container">
+    <section class="content-header container ">
       <h1>
-        Interests
+        Photo
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        
-        <li class="active">Interest</li>
+         
+        <li class="active">Manage Photo</li>
       </ol>
     </section>
 
@@ -107,23 +103,23 @@
             <div class="box-body box-profile">
               <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
 
-              <h3 class="profile-username text-center">ragini Sharma</h3>
+              <h3 class="profile-username text-center">Ragini Sharma</h3>
 
               <p class="text-muted text-center">Software Engineer</p>
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item">
-                  <b></b> <a class="pull-right"></a>
+                   <b></b> <a class="pull-right"></a>
                 </li>
                 <li class="list-group-item">
                   <b></b> <a class="pull-right"></a>
                 </li>
                 <li class="list-group-item">
-                  <b> </b> <a class="pull-right"> </a>
+                  <b></b> <a class="pull-right"></a>
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+              <a href="#" class="btn btn-primary btn-block"><b></b></a>
             </div>
             <!-- /.box-body -->
           </div>
@@ -139,14 +135,14 @@
               <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
 
               <p class="text-muted">
-                B.S. in Computer Science from the University of Mumbai
+                B.S. in Computer Science from the University of mumbai
               </p>
 
               <hr>
 
               <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-              <p class="text-muted">Maharashtra, India  </p>
+              <p class="text-muted">Mumbai, India</p>
 
               <hr>
 
@@ -169,114 +165,104 @@
 
         <!-- /.col -->
         <div class="col-md-6">
-             <div class="row">
-                  <div class="col-md-6 col-xs-6">
-                       <a href="search.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-search"></span> Start New Search</a>
-                  </div>
-                  <div class="col-md-6 col-xs-6">
-                    <a href="logout.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+           <!-- <div class="row">
+<div class="col-md-6 col-xs-6">
+  <a href="search.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-search"></span> Start New Search</a>
+</div>
+<div class="col-md-6 col-xs-6">
+  <a href="logout.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+</div>
+</div>-->
+         <h3>Add/Edit Photos</h3> 
+               
+     
+    <ul>
+      <li>The photgraphs should be in .jpg / .jpeg/ .png format. </li>
+      <li>The file size can be up-to  maximum <strong>3 MB</strong> (3072 KB).</li>
+      <li>We recommend to use a file with size of 100 KB to 500 KB. <br />
+        </li>
+    </ul>
+<div class="box">
+<form enctype="multipart/form-data" action="" method="post" onsubmit="return submitOnce();" class="form form-horizontal" role="form">
+  <input type="hidden" name="has_main" value="n" />
+  <input type="hidden" name="MAX_FILE_SIZE" value="4194304"/>
+  
+  <div class="form-group">
+    <label for="user_profile_picture" class="col-sm-3 control-label">Please choose a file</label>
+    <div class="col-sm-9">
+      <input name="user_profile_picture" id="user_profile_picture" type="file" autofocus class="form-control" style="height:auto"/>
+      </div>
+  </div>
+  
+  <div class="col-sm-offset-3 col-sm-9">
+    <script type="text/javascript">document.write('<input id="uploadphoto" name="uploadphoto" type="submit" class="bttn" value="Upload Photograph" />')
+</script>
+  <noscript>
+    <div class="alert alert-danger" role="alert">Java script must be enabled to use Vivaah Site<br />
+      <a href="/customer-relations/faq-help/technical-issues.php#3">Click here</a> to find out how to enable it.  
+      </div>
+  </noscript>
+    <span id="msg_photoloading" style="display:none">
+      <img src="../../img/ajaxLoader.gif" alt="Photgraph upload started. Upload time depends on the internet connection speed." />Photograph Upload Started ...
+      </span>
+    </div>
+</form>
+</div>
+<p>&nbsp;</p>
+<div class="box">
+    <form id="form1" name="form1" method="post" action=""  class="form" role="form">
+        <table style="width:95%" class="table table-condensed table-responsive">
+          <tr>
+            <td style="width:10%">&nbsp;</td>
+            <td style="width:20%"><strong>Main/ Album</strong></td>
+            <td style="width:25%"><strong>Thumb</strong></td>
+<!--            <td width="20%"><strong>Date &amp; TIme added (IST)</strong></td> -->
+            <td ><strong>Status &amp; Visibility</strong></td>
+          </tr>
+
+                    <tr>
+            <td style="text-align:center">
+                          <input type="radio" name="radio" id="xVIN7760_3237980404" value="VIN7760_3237980404" class="form-control"/>
+              <input type="hidden" name="VIN7760_3237980404_status" value="S" />
+                          </td>
+            <td>
+            Main Photo            </td>
+            <td>
+                        <img src="../../dist/img/user4-128x128.jpg" class="thumbnail" alt=""/>
+            </td>
+<!--            <td>2018-06-15 03:05:02</td> -->
+            <td>Awaiting Approval               <br/><br/>
+                Shown           </td>
+          </tr>
+          
+                  </table>
+              
+      <div class="col-xs-12">
+      <div class="col-xs-12 col-sm-4 text-center padd5">
+      <input name="count_photograph" type="hidden" value="1" />
                 </div>
-        </div><br>
-          <div class="nav-tabs-custom">
-
-
-              <ul class="nav nav-tabs">
-                  <li class="active"><a href="#received" data-toggle="tab">Received Interest</a></li>
-                  <li><a href="#sent" data-toggle="tab">Sent Interest</a></li>
-                  <li><a href="#hidden" data-toggle="tab">Hidden Interest</a></li> 
-              </ul>
-             
-             
-              <!-- /.tab-pane -->
-               <div class="tab-content">
-      <div class="tab-pane active" id="received" style="height:50%; overflow:auto;">
-        <h4 class="text-primary">Interests</h4>
-        <br>
-        <table width="100%" class="table table-bordered">
-          <th>Name</th>
-          <th>Match Score</th>
-          <th >View Profile</th>
-          <th >Status</th>
-          <th width="30%">Action</th>
-          <tr><td>Monish Chandan</td> 
-            <td><span class="badge bg-red" align="center">55%</span></td>
-              <td><a href="" target="_blank" class="btn btn-info btn-xs">View Profile</a></td>
-              <td>Pending</td>
-              <td align="center">
-                <div class="btn-group">
-                  <a href="" class=" btn btn-success btn-xs conf-action">Accept</a>
-                  <a href="" class=" btn btn-danger btn-xs conf-action">Reject</a>
-                  <a href="" class=" btn btn-warning btn-xs conf-action">Hide</a>
-                </div></td><tr>  
-        </table>
+      <div class="col-xs-12 col-sm-4 text-center padd5">
+      <input name="delete" type="submit" class="bttn" id="delete" value="Delete" style="padding:3px"/>
       </div>
 
-
-
-
-      <div class="tab-pane" id="sent" style="height:50%x; overflow:auto;">
-
-        <br>
-            <table width="100%" class="table table-bordered">
-          <th>Name</th>
-          <th>Match Score</th>
-          <th>View Profile</th>
-          <th>Status</th>
-          <!-- <th width="20%">Action</th> -->
-          <tr><td>Monish Chandan</td>
-            <td><span class="badge bg-red" align="center;">55%</span></td>
-            
-            <td><a href="" target="_blank" class="btn btn-info btn-xs">View Profile</a></td>
-            <td>Pending</td><tr> 
-              </table>
-              </div>
-
-
-      <div class="tab-pane" id="hidden" style="height:50%;">
-
-        <h4 class="text-center">All hidden received interests</h4>
-
-        <br>
-        You have not hidden any received interests.      </div>
-        <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div> 
-
-
-    </div>
-
-
-
-
-
-  </div>
-
-
-
-
-
-
-
-  <div class="col-xs-2" align="right">
-        </div>
-  </div>
+      <div class="col-xs-12 col-sm-4 text-center padd5">
+            </div>
+      </div>
+              </form>
+</div>
+</div> 
 
 </div>
 
 
 
 
-</div>
+ 
 
+</div> 
         
-           
-            
+             
+         
     </div>
 
   </div>
@@ -291,19 +277,13 @@
           <!-- /.nav-tabs-custom -->
         </div>
         <!-- /.col -->
-      </  div>
+      </div>
       <!-- /.row -->
 
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-  <!-- Control Sidebar -->
   
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->

@@ -34,7 +34,7 @@
 <body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
 
-   <header class="main-header">
+  <header class="main-header">
     <nav class="navbar navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -47,28 +47,27 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse pull-right" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+            <li><a href="../frontend/home.html">Home  </a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="sr-only">(current)</span><span class="caret"></span></a>
                    <ul class="dropdown-menu" role="menu">
                     <li><a href="profile.html">View my Profile</a></li>
                    <li><a href="edit_profile.html">Edit My Profile</a></li>
                    <li><a href="partner_choice.html">Edit Partner Preferences</a></li>
                    <li><a href="photograph.html">Manage Photograph</a></li>                    
-                   <li><a href="privacy_settings.html">Privacy Settings</a></li>
+                   <li><a href="privacy.html">Privacy Settings</a></li>
                </ul>
              </li>     
              <li><a href="partner_choice.html">Partner's Choice</a></li>  
              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">My Contacts <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="interest.html">Received Interest</a></li>
-                  <li><a href="interest.html#sent">Sent Interests</a></li>
-                  <li><a href="interest.html#hidden"> Hidden Interests</a></li> 
-                  <li><a href="shotlist.html">Shortlisted Profile</a></li>
-                </ul>
-              </li>           
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="interest.html">Received Interest</a></li>
+      <li><a href="interest.html#sent">Sent Interests</a></li>
+      <li><a href="interest.html#hidden"> HiddenInterests</a></li> 
+      <li><a href="shotlist.html">Shortlisted Profile</a></li>
+    </ul>
+  </li>           
             <li><a href="../frontend/contact.html">Contact</a></li>
              <li><a href="home.html">Logout</a></li> 
-
           </ul>
            
         </div>
@@ -81,18 +80,19 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  
+   
+
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper ">
     <!-- Content Header (Page header) -->
-    <section class="content-header container">
+    <section class="content-header container ">
       <h1>
-        Interests
+        Parivacy
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        
-        <li class="active">Interest</li>
+         
+        <li class="active">Privacy Settings</li>
       </ol>
     </section>
 
@@ -107,23 +107,23 @@
             <div class="box-body box-profile">
               <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
 
-              <h3 class="profile-username text-center">ragini Sharma</h3>
+              <h3 class="profile-username text-center">Ragini Sharma</h3>
 
               <p class="text-muted text-center">Software Engineer</p>
 
               <ul class="list-group list-group-unbordered">
                 <li class="list-group-item">
-                  <b></b> <a class="pull-right"></a>
+                   <b></b> <a class="pull-right"></a>
                 </li>
                 <li class="list-group-item">
                   <b></b> <a class="pull-right"></a>
                 </li>
                 <li class="list-group-item">
-                  <b> </b> <a class="pull-right"> </a>
+                  <b></b> <a class="pull-right"></a>
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+              <a href="#" class="btn btn-primary btn-block"><b></b></a>
             </div>
             <!-- /.box-body -->
           </div>
@@ -139,14 +139,14 @@
               <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
 
               <p class="text-muted">
-                B.S. in Computer Science from the University of Mumbai
+                B.S. in Computer Science from the University of mumbai
               </p>
 
               <hr>
 
               <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
 
-              <p class="text-muted">Maharashtra, India  </p>
+              <p class="text-muted">Mumbai, India</p>
 
               <hr>
 
@@ -169,114 +169,110 @@
 
         <!-- /.col -->
         <div class="col-md-6">
-             <div class="row">
-                  <div class="col-md-6 col-xs-6">
-                       <a href="search.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-search"></span> Start New Search</a>
-                  </div>
-                  <div class="col-md-6 col-xs-6">
-                    <a href="logout.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-                </div>
-        </div><br>
-          <div class="nav-tabs-custom">
+           <!-- <div class="row">
+<div class="col-md-6 col-xs-6">
+  <a href="search.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-search"></span> Start New Search</a>
+</div>
+<div class="col-md-6 col-xs-6">
+  <a href="logout.html" title="" class="btn btn-block btn-primary"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+</div>
+</div>-->
+        
+           <div class="">
 
+<p>Please update to desired privacy level for each category by selecting the corresponding radio button.</p>
 
-              <ul class="nav nav-tabs">
-                  <li class="active"><a href="#received" data-toggle="tab">Received Interest</a></li>
-                  <li><a href="#sent" data-toggle="tab">Sent Interest</a></li>
-                  <li><a href="#hidden" data-toggle="tab">Hidden Interest</a></li> 
-              </ul>
-             
-             
-              <!-- /.tab-pane -->
-               <div class="tab-content">
-      <div class="tab-pane active" id="received" style="height:50%; overflow:auto;">
-        <h4 class="text-primary">Interests</h4>
-        <br>
-        <table width="100%" class="table table-bordered">
-          <th>Name</th>
-          <th>Match Score</th>
-          <th >View Profile</th>
-          <th >Status</th>
-          <th width="30%">Action</th>
-          <tr><td>Monish Chandan</td> 
-            <td><span class="badge bg-red" align="center">55%</span></td>
-              <td><a href="" target="_blank" class="btn btn-info btn-xs">View Profile</a></td>
-              <td>Pending</td>
-              <td align="center">
-                <div class="btn-group">
-                  <a href="" class=" btn btn-success btn-xs conf-action">Accept</a>
-                  <a href="" class=" btn btn-danger btn-xs conf-action">Reject</a>
-                  <a href="" class=" btn btn-warning btn-xs conf-action">Hide</a>
-                </div></td><tr>  
-        </table>
-      </div>
-
-
-
-
-      <div class="tab-pane" id="sent" style="height:50%x; overflow:auto;">
-
-        <br>
-            <table width="100%" class="table table-bordered">
-          <th>Name</th>
-          <th>Match Score</th>
-          <th>View Profile</th>
-          <th>Status</th>
-          <!-- <th width="20%">Action</th> -->
-          <tr><td>Monish Chandan</td>
-            <td><span class="badge bg-red" align="center;">55%</span></td>
-            
-            <td><a href="" target="_blank" class="btn btn-info btn-xs">View Profile</a></td>
-            <td>Pending</td><tr> 
-              </table>
-              </div>
-
-
-      <div class="tab-pane" id="hidden" style="height:50%;">
-
-        <h4 class="text-center">All hidden received interests</h4>
-
-        <br>
-        You have not hidden any received interests.      </div>
-        <div class="box-footer clearfix">
-              <ul class="pagination pagination-sm no-margin pull-right">
-                <li><a href="#">&laquo;</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div> 
-
+<form id="update_privacy" name="update_privacy" method="post" action="privacy_settings_post.php" class="form form-horizontal">
+    
+  <div class="form-group">
+    <label class="col-sm-6 col-md-6 col-lg-6 control-label">
+    Display My real name :
+    </label>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <fieldset>
+        <label>
+          <input type="radio" name="priv_name" value="30" ???/>
+          Display to All - Visitors & members
+        </label>
+        <br />
+        <label>
+        <input type="radio" name="priv_name" value="20" checked="checked" />
+        Display to members only</label>
+        <br />
+        <label>
+        <input name="priv_name" type="radio" value="10" ???/>
+        Do not display
+        </label>
+      </fieldset>
 
     </div>
+  </div>
 
+  <div class="clearfix"><br/></div>
+    
+  <div class="form-group">
+    <label class="col-sm-6 col-md-6 col-lg-6 control-label">
+    Display My Astro Details  :
+      <span class="help-block"  style="font-size:small">(i.e. When a contact made by you has been accepted.)</span>
+    </label>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <fieldset>
+        <label>
+        <input type="radio" name="priv_astro" value="30" ???/>Display to All - Visitors & members</label>
+        <label>
+        <input type="radio" name="priv_astro" value="20" checked="checked" />Display to members only
+        </label>
+      </fieldset>
 
+    </div>
+  </div>
 
+  <div class="clearfix"><br/></div>
 
+  
+  <div class="form-group">
+    <label class="col-sm-6 col-md-6 col-lg-6 control-label">
+    Allow members to share My Profile** :
+      <span class="help-block"  style="font-size:small">(i.e. with family and friends on Facebook &amp; Google Plus)</span>
+    </label>
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <fieldset>
+      <label>
+        <input type="radio" name="priv_share" value="20" checked="checked" />
+        Allow members only</label>
+      <br />
+      <label>
+        <input type="radio" name="priv_share" value="10" ???/>
+        Do not allow</label>
+      </fieldset>
 
+    </div>
   </div>
 
 
+  <div class="form-group">
+    <div class="col-sm-offset-6 col-sm-6 col-md-offset-6 col-md-6 col-lg-offset-6 col-lg-6">
+      <script type="text/javascript">document.write('&nbsp;<input name="updateprivacy" type="submit" class="bttn" id="updateprivacy" value="Update Privacy Settings" />')
+      </script>
+      <noscript>
+      <div class="alert alert-danger">JavaScript must be enabled for using Vivaah.com Indian Matrimonials Site. <a href="/customer-relations/faq-help/technical-issues.php#3">Click here</a> to go to our FAQ page and find out how to enable it.</div>
+      </noscript>
 
-
-
-
-
-  <div class="col-xs-2" align="right">
-        </div>
+    </div>
   </div>
-
-</div>
-
+</form>
 
 
 
-</div>
 
+<p>&nbsp;</p>
+</div> <!-- End Content Div -->
+
+
+</div> 
         
-           
-            
+             
+         
     </div>
 
   </div>
@@ -291,16 +287,17 @@
           <!-- /.nav-tabs-custom -->
         </div>
         <!-- /.col -->
-      </  div>
+      </div>
       <!-- /.row -->
 
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+   
 
   <!-- Control Sidebar -->
-  
+   
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
